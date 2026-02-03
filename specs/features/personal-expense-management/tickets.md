@@ -64,7 +64,7 @@ This document contains implementation tickets for the **Personal Expense Managem
 
 ---
 
-#### 2. - [ ] **PEM-USER-001-BE-T02 — Implement Create Expense Transaction Endpoint**
+#### 2. - [x] **PEM-USER-001-BE-T02 — Implement Create Expense Transaction Endpoint** (2026-02-03)
 
 - **Type:** BE
 - **Description:** Implement POST `/api/transactions` endpoint to create expense transactions. Supports Scenarios 1, 2, 3, 4, 5, 6, 7, 8, 10.

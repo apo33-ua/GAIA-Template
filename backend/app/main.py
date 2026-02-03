@@ -4,6 +4,7 @@ Expense Tracker - Personal Expense Management
 """
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from app.presentation.routers import transactions
 
 app = FastAPI(
     title="Expense Tracker API",
@@ -19,6 +20,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Register routers
+app.include_router(transactions.router)
 
 @app.get("/health")
 def health_check():
